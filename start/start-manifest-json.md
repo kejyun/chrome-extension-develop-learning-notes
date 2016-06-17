@@ -73,5 +73,19 @@
 | [activeTab](https://developer.chrome.com/extensions/activeTab)  | 存取目前的 tab 頁面  |
 
 
+### [icons](https://developer.chrome.com/extensions/manifest/icons)
+
+套件圖示
+
+```json
+{
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}
+```
+
 ## 參考資料
 * [Manifest File Format - Google Chrome](https://developer.chrome.com/extensions/manifest)
