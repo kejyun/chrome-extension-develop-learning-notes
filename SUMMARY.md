@@ -10,5 +10,7 @@
     * [複寫 Chrome 頁面](elementary/elementary-overriding-chrome-pages.md)
 * [範例](example/example-README.md)
     * [Twitter 分享小工具](example/example-twitter-social-toolkit.md)
-* [發布套件](publish/publish-README.md)
+* [套件](plugin/plugin-README.md)
+    * [發布套件](plugin/plugin-publish.md)
+    * [下載套件](plugin/plugin-download.md)
 * [學習資源](resource/resource-README.md)
