@@ -34,10 +34,10 @@ chrome.contextMenus.create({
     onclick:twitterShare                // 點選動作 callback function
 });
 
-function twitterShare(selected_text) {
+function twitterShare(selector) {
     // 建立新頁籤
     chrome.tabs.create({
-        url:"https://twitter.com/intent/tweet?text="+selected_text.selectionText
+        url:"https://twitter.com/intent/tweet?text="+selector.selectionText
     });
 }
 ```
