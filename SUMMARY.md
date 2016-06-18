@@ -8,6 +8,8 @@
     * [訊息傳送](start/start-message-passing.md)
 * [初階](elementary/elementary-README.md)
     * [複寫 Chrome 頁面](elementary/elementary-overriding-chrome-pages.md)
+* [進階](advanced/advanced-README.md)
+    * [Rich Notifications](advanced/advanced-rich-notifications.md)
 * [範例](example/example-README.md)
     * [Twitter 分享小工具](example/example-twitter-social-toolkit.md)
 * [套件](plugin/plugin-README.md)
