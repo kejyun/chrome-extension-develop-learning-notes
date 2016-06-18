@@ -1,0 +1,387 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Script 環境 | Chrome 套件開發學習筆記</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../start/start-message-passing.html" />
+    
+    
+    <link rel="prev" href="../start/start-manifest-json.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="1.3" data-basepath=".." data-revision="Sat Jun 18 2016 13:31:41 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        介紹
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="start/start-README.html">
+            
+                
+                    <a href="../start/start-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        開始
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="start/start-helloworld.html">
+            
+                
+                    <a href="../start/start-helloworld.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Hello World
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="start/start-manifest-json.html">
+            
+                
+                    <a href="../start/start-manifest-json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        manifest.json
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="start/start-script-environment.html">
+            
+                
+                    <a href="../start/start-script-environment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Script 環境
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="start/start-message-passing.html">
+            
+                
+                    <a href="../start/start-message-passing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        訊息傳送
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="resource/resource-README.html">
+            
+                
+                    <a href="../resource/resource-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        學習資源
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Chrome 套件開發學習筆記</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="script-%E7%92%B0%E5%A2%83">Script &#x74B0;&#x5883;</h1>
+<h2 id="content-script">Content Script</h2>
+<p>&#x53EF;&#x4EE5;&#x8B93;&#x4F60;&#x5B58;&#x53D6;&#x4F7F;&#x7528;&#x8005;&#x9801;&#x9762;&#x7684; Script</p>
+<blockquote>
+<p><strong><em>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x90E8;&#x5206; Chrome &#x63D0;&#x4F9B;&#x7684; api &#x53BB;&#x64F7;&#x53D6;&#x5404;&#x7A2E;&#x8CC7;&#x8A0A; (e.g: <code>chrome.runtime.sendMessage()</code>)</em></strong></p>
+</blockquote>
+<h3 id="%E8%A8%AD%E5%AE%9A-content-script">&#x8A2D;&#x5B9A; Content Script</h3>
+<p>&#x5728; <code>manifest.json</code> &#x6A94;&#x6848;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x8A2D;&#x5B9A;&#x7B26;&#x5408;&#x6307;&#x5B9A;&#x7684;&#x7DB2;&#x5740;&#xFF0C;&#x57F7;&#x884C;&#x6211;&#x5011;&#x7684; CSS &#x8DDF; JS</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;content_scripts&quot;</span>: [
+        {
+            <span class="hljs-string">&quot;matches&quot;</span>: [<span class="hljs-string">&quot;http://*/*&quot;</span>, <span class="hljs-string">&quot;https://*/*&quot;</span>],
+            <span class="hljs-string">&quot;css&quot;</span>: [<span class="hljs-string">&quot;app.css&quot;</span>],
+            <span class="hljs-string">&quot;js&quot;</span>: [<span class="hljs-string">&quot;app.js&quot;</span>]
+        },
+        {
+            <span class="hljs-string">&quot;matches&quot;</span>: [<span class="hljs-string">&quot;http://kejyun.com/&quot;</span>, <span class="hljs-string">&quot;https://kejyun.com/&quot;</span>],
+            <span class="hljs-string">&quot;css&quot;</span>: [<span class="hljs-string">&quot;kejyun.css&quot;</span>],
+            <span class="hljs-string">&quot;js&quot;</span>: [<span class="hljs-string">&quot;jquery.js&quot;</span>,<span class="hljs-string">&quot;kejyun.js&quot;</span>]
+        }
+    ]
+}
+</code></pre>
+<p>&#x5728;&#x8A2D;&#x5B9A;&#x7684;&#x6642;&#x5019;&#xFF0C;&#x82E5;&#x6709;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x50CF;&#x662F; jQuery &#x5957;&#x4EF6;&#xFF0C;&#x5247;&#x5FC5;&#x9808;&#x5728;&#x6211;&#x5011;&#x81EA;&#x5DF1;&#x7684; <code>kejyun.js</code> Script &#x4E4B;&#x524D;&#x5C31;&#x8F09;&#x5165; <code>jqeury.js</code>&#xFF0C;&#x6240;&#x4EE5;&#x9663;&#x5217;&#x7684;&#x9806;&#x5E8F;&#x6703;&#x5F71;&#x97FF;&#x8F09;&#x5165;&#x7684;&#x9806;&#x5E8F;</p>
+<h3 id="%E7%B7%A8%E8%BC%AF-app-js">&#x7DE8;&#x8F2F; <code>app.js</code></h3>
+<p>&#x5728; <code>app.js</code> &#x6A94;&#x6848;&#x4E2D;&#x6211;&#x5011;&#x52A0;&#x5165;&#x4E00;&#x500B;&#x7C21;&#x55AE;&#x7684; <code>alert()</code> &#x5370;&#x51FA;&#x8A72;&#x7DB2;&#x57DF;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// app.js</span>
+alert(<span class="hljs-built_in">document</span>.domain);
+</code></pre>
+<p>&#x7DE8;&#x8F2F;&#x5B8C;&#x5F8C;&#x91CD;&#x65B0;&#x8F09;&#x5165;&#x5957;&#x4EF6;&#x8B93;&#x4ED6;&#x53EF;&#x4EE5;&#x8B80;&#x53D6;&#x65B0;&#x7684;&#x8A2D;&#x5B9A;&#x8DDF;&#x7A0B;&#x5F0F;&#xFF0C;&#x6211;&#x5011;&#x5230; <a href="https://www.google.com.tw" target="_blank">Google</a> &#x7DB2;&#x7AD9;&#x53BB;&#x6E2C;&#x8A66;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E0B;&#x5217;&#x7684; <code>alert</code> &#x8A0A;&#x606F;&#x4E86;</p>
+<p><img src="images/start-script-environment-content-script-demo.png" alt="Content Script Demo"></p>
+<h2 id="popup-script">Popup Script</h2>
+<h3 id="%E8%A8%AD%E5%AE%9A-popup-script">&#x8A2D;&#x5B9A; Popup Script</h3>
+<p>&#x5728;&#x6211;&#x5011;&#x7684; <code>popup.html</code> &#x7576;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x8F09;&#x5165;&#x9019;&#x500B;&#x9801;&#x9762;&#x7684; js</p>
+<blockquote>
+<p><strong><em>&#x6C92;&#x8FA6;&#x6CD5;&#x4F7F;&#x7528;&#x4EFB;&#x4F55; Chrome &#x63D0;&#x4F9B;&#x7684; API &#x53BB;&#x9032;&#x884C;&#x64CD;&#x4F5C;</em></strong></p>
+</blockquote>
+<pre><code class="lang-html"><span class="hljs-doctype">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Getting Started Extension&apos;s Popup<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;popup.js&quot;</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    Hello World
+  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<h3 id="%E7%B7%A8%E8%BC%AF-popup-js">&#x7DE8;&#x8F2F; <code>popup.js</code></h3>
+<p>&#x5728; <code>popup.js</code> &#x7576;&#x4E2D;&#x6211;&#x5011;&#x4E00;&#x6A23;&#x8F09;&#x5165;&#x4E00;&#x500B;&#x7C21;&#x55AE;&#x7684; alert&#xFF0C;&#x53BB;&#x5370;&#x51FA;&#x4ED6;&#x7684;&#x7DB2;&#x57DF;</p>
+<pre><code class="lang-javascript">alert(<span class="hljs-built_in">document</span>.domain);
+</code></pre>
+<p>&#x7DE8;&#x8F2F;&#x5B8C;&#x5F8C;&#x91CD;&#x65B0;&#x8F09;&#x5165;&#x5957;&#x4EF6;&#x8B93;&#x4ED6;&#x53EF;&#x4EE5;&#x8B80;&#x53D6;&#x65B0;&#x7684;&#x8A2D;&#x5B9A;&#x8DDF;&#x7A0B;&#x5F0F;&#xFF0C;&#x6211;&#x5011;&#x9EDE;&#x9078;&#x5957;&#x4EF6;&#x7684;&#x6309;&#x9215;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E0B;&#x5217;&#x7684; <code>alert</code> &#x8A0A;&#x606F;&#x4E86;</p>
+<p><img src="images/start-script-environment-popup-script-demo-document-domain.png" alt="Popup Script Demo Alert Document Domain"></p>
+<p>&#x9019;&#x88E1;&#x4F60;&#x6703;&#x767C;&#x73FE;&#x5370;&#x51FA;&#x4F86;&#x7684; alert &#x8A0A;&#x606F;&#x662F; <strong>nihpfhbicpcnoabjombmmdmkalbpgbem</strong>&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6211;&#x5011;&#x6240;&#x719F;&#x77E5;&#x7684;&#x7DB2;&#x57DF;&#xFF0C;&#x5176;&#x5BE6;&#x9019;&#x88E1;&#x7684;&#x7DB2;&#x57DF;&#x6307;&#x7684;&#x662F;&#x8A72;&#x5957;&#x4EF6;&#x7684;&#x5B57;&#x5B9A;&#x7FA9;&#x7DB2;&#x57DF;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x64F4;&#x5145;&#x529F;&#x80FD;&#x5957;&#x4EF6;&#x4E2D;&#x770B;&#x5230;&#x9019;&#x500B; ID</p>
+<p><img src="images/start-script-environment-popup-script-domain-source.png" alt="Popup Script Domain Source"></p>
+<p>&#x6240;&#x4EE5; <code>popup.js</code> &#x50C5;&#x80FD;&#x5920;&#x5B58;&#x53D6;&#x8A72;&#x9801;&#x9762;&#x986F;&#x793A;&#x7684;&#x8CC7;&#x6599;&#x5167;&#x5BB9;</p>
+<p>&#x50CF;&#x662F;&#x6211;&#x5982;&#x679C;&#x5C07; <code>popup.js</code> &#x7A0B;&#x5F0F;&#x6539;&#x70BA;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x9801;&#x9762;&#x8CC7;&#x6599;&#x6642;&#xFF0C;&#x4F60;&#x6703;&#x770B;&#x5230;&#x53EA;&#x6709;&#x8A72; popup &#x7684;&#x9801;&#x9762;&#x8CC7;&#x6599;&#x6703;&#x88AB;&#x4FEE;&#x6539;&#x5230;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.write(<span class="hljs-string">&apos;Hi Taiwan&apos;</span>);
+</code></pre>
+<p><img src="images/start-script-environment-popup-script-demo-document-write.png" alt="Popup Script Demo Document Write"></p>
+<h2 id="background-script">Background Script</h2>
+<p>&#x5728;&#x5957;&#x4EF6;&#x80CC;&#x666F;&#x57F7;&#x884C;&#x7684; Script&#xFF0C;&#x6C92;&#x8FA6;&#x6CD5;&#x76F4;&#x63A5;&#x5B58;&#x53D6;&#x4F7F;&#x7528;&#x8005;&#x9801;&#x9762;&#x4E0A;&#x4EFB;&#x4F55;&#x7684; DOM</p>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5168;&#x90E8; Chrome &#x63D0;&#x4F9B;&#x7684; API &#x5957;&#x4EF6;</p>
+</blockquote>
+<h3 id="%E8%A8%AD%E5%AE%9A-background-script">&#x8A2D;&#x5B9A; Background Script</h3>
+<p>&#x5728; <code>manifest.json</code> &#x6A94;&#x6848;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x8A2D;&#x5B9A;&#x6211;&#x5011;&#x7684; <strong>Background Script</strong> &#x5728;&#x54EA;&#x88E1;&#xFF0C;&#x9019;&#x88E1;&#x4E5F;&#x8DDF; <strong>Content Script</strong> &#x4E00;&#x6A23;&#xFF0C;JS &#x6A94;&#x6848;&#x7684;&#x9806;&#x5E8F;&#x6703;&#x5F71;&#x97FF;&#x8F09;&#x5165;&#x7684;&#x9806;&#x5E8F;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;background&quot;</span>: {
+        <span class="hljs-string">&quot;scripts&quot;</span>: [<span class="hljs-string">&quot;jquery.js&quot;</span>, <span class="hljs-string">&quot;background.js&quot;</span>]
+    },
+}
+</code></pre>
+<h3 id="%E7%B7%A8%E8%BC%AF-background-js">&#x7DE8;&#x8F2F; <code>background.js</code></h3>
+<pre><code class="lang-javascript">alert(<span class="hljs-built_in">document</span>.location);
+</code></pre>
+<p>&#x7DE8;&#x8F2F;&#x5B8C;&#x5F8C;&#x91CD;&#x65B0;&#x8F09;&#x5165;&#x5957;&#x4EF6;&#x8B93;&#x4ED6;&#x53EF;&#x4EE5;&#x8B80;&#x53D6;&#x65B0;&#x7684;&#x8A2D;&#x5B9A;&#x8DDF;&#x7A0B;&#x5F0F;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E0B;&#x5217;&#x7684; <code>alert</code> &#x8A0A;&#x606F;&#x4E86;&#xFF0C;&#x4F60;&#x6703;&#x767C;&#x73FE; Backgound Script &#x662F;&#x5728; <code>chrome-extension://nihpfhbicpcnoabjombmmdmkalbpgbem/_generated_background_page.html</code> &#x8DEF;&#x5F91;&#x7576;&#x4E2D;</p>
+<p><img src="images/start-script-environment-background-script-demo-document-location.png" alt="Background Script Demo Document Location"></p>
+<h2 id="%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h2>
+<ul>
+<li><a href="https://developer.chrome.com/extensions/content_scripts" target="_blank">Content Scripts - Google Chrome</a></li>
+<li><a href="https://www.youtube.com/watch?v=y3y4W3g12cU&amp;list=PLYxzS__5yYQlWil-vQ-y7NR902ovyq1Xi&amp;index=3" target="_blank">Chrome Extension Tutorial 3: Script Environments - YouTube</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../start/start-manifest-json.html" class="navigation navigation-prev " aria-label="Previous page: manifest.json"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../start/start-message-passing.html" class="navigation navigation-next " aria-label="Next page: 訊息傳送"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
