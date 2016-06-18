@@ -6,4 +6,6 @@
     * [manifest.json](start/start-manifest-json.md)
     * [Script 環境](start/start-script-environment.md)
     * [訊息傳送](start/start-message-passing.md)
+* [初階](elementary/elementary-README.md)
+    * [複寫 Chrome 頁面](elementary/elementary-overriding-chrome-pages.md)
 * [學習資源](resource/resource-README.md)
