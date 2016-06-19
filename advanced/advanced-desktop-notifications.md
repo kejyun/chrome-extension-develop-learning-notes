@@ -57,6 +57,9 @@ dntrigger.addEventListener('click', function(e) {
 });
 ```
 
+## Demo
+
+![通知 Demo](./images/desktop-notification-demo.png)
 
 ## 參考資料
 * [Desktop Notifications API - YouTube](https://www.youtube.com/watch?v=IdK0nZdrkOk)
