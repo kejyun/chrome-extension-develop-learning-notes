@@ -1,0 +1,627 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Rich Notifications | Chrome 套件開發學習筆記</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../advanced/advanced-desktop-notifications.html" />
+    
+    
+    <link rel="prev" href="../advanced/advanced-README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="3.1" data-basepath=".." data-revision="Sun Jun 19 2016 12:23:19 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        介紹
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="start/start-README.html">
+            
+                
+                    <a href="../start/start-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        開始
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="start/start-helloworld.html">
+            
+                
+                    <a href="../start/start-helloworld.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Hello World
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="start/start-manifest-json.html">
+            
+                
+                    <a href="../start/start-manifest-json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        manifest.json
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="start/start-script-environment.html">
+            
+                
+                    <a href="../start/start-script-environment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Script 環境
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="start/start-message-passing.html">
+            
+                
+                    <a href="../start/start-message-passing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        訊息傳送
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="elementary/elementary-README.html">
+            
+                
+                    <a href="../elementary/elementary-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        初階
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="elementary/elementary-overriding-chrome-pages.html">
+            
+                
+                    <a href="../elementary/elementary-overriding-chrome-pages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        複寫 Chrome 頁面
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="advanced/advanced-README.html">
+            
+                
+                    <a href="../advanced/advanced-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        進階
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1" data-path="advanced/advanced-rich-notifications.html">
+            
+                
+                    <a href="../advanced/advanced-rich-notifications.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Rich Notifications
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="advanced/advanced-desktop-notifications.html">
+            
+                
+                    <a href="../advanced/advanced-desktop-notifications.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Desktop Notifications
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="example/example-README.html">
+            
+                
+                    <a href="../example/example-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        範例
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="example/example-twitter-social-toolkit.html">
+            
+                
+                    <a href="../example/example-twitter-social-toolkit.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Twitter 分享小工具
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="plugin/plugin-README.html">
+            
+                
+                    <a href="../plugin/plugin-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        套件
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="plugin/plugin-publish.html">
+            
+                
+                    <a href="../plugin/plugin-publish.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        發布套件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="plugin/plugin-download.html">
+            
+                
+                    <a href="../plugin/plugin-download.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        下載套件
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="resource/resource-README.html">
+            
+                
+                    <a href="../resource/resource-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        學習資源
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Chrome 套件開發學習筆記</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="rich-notifications">Rich Notifications</h1>
+<h2 id="%E4%B8%80%E8%88%AC%E9%80%9A%E7%9F%A5%EF%BC%88basic%EF%BC%89">&#x4E00;&#x822C;&#x901A;&#x77E5;&#xFF08;basic&#xFF09;</h2>
+<h3 id="%E8%A8%AD%E5%AE%9A-manifest-json">&#x8A2D;&#x5B9A; <code>manifest.json</code></h3>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;manifest_version&quot;</span>: <span class="hljs-number">2</span>,
+
+    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Rich Notification&quot;</span>,
+    <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;Rich Notification description&quot;</span>,
+    <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;1.0&quot;</span>,
+    <span class="hljs-string">&quot;background&quot;</span>: {
+        <span class="hljs-string">&quot;scripts&quot;</span>: [<span class="hljs-string">&quot;background.js&quot;</span>]
+    },
+    <span class="hljs-string">&quot;browser_action&quot;</span>: {
+        <span class="hljs-string">&quot;default_popup&quot;</span>: <span class="hljs-string">&quot;index.html&quot;</span>
+    },
+    <span class="hljs-string">&quot;permissions&quot;</span>: [
+        <span class="hljs-string">&quot;notifications&quot;</span>
+    ],
+    <span class="hljs-string">&quot;icons&quot;</span>: {
+        <span class="hljs-string">&quot;16&quot;</span>: <span class="hljs-string">&quot;icon.png&quot;</span>,
+        <span class="hljs-string">&quot;32&quot;</span>: <span class="hljs-string">&quot;icon.png&quot;</span>,
+        <span class="hljs-string">&quot;64&quot;</span>: <span class="hljs-string">&quot;icon.png&quot;</span>,
+        <span class="hljs-string">&quot;128&quot;</span>: <span class="hljs-string">&quot;icon.png&quot;</span>
+    }
+}
+</code></pre>
+<h3 id="%E6%96%B0%E5%A2%9E-default-popup-index-html-%E9%A0%81%E9%9D%A2">&#x65B0;&#x589E; default_popup index.html &#x9801;&#x9762;</h3>
+<blockquote>
+<p>&#x82E5;&#x901A;&#x77E5;&#x8CC7;&#x8A0A;&#x4E2D;&#x6709;&#x5176;&#x4ED6;&#x7279;&#x6B8A;&#x5B57;&#x4E32;&#x7DE8;&#x78BC;&#xFF0C;&#x5982;&#x4E2D;&#x6587;&#x5B57;&#xFF0C;&#x5247;&#x5FC5;&#x9808;&#x8981;&#x5728;&#x9801;&#x9762;&#x4E2D;&#x8A2D;&#x5B9A;&#x8A72;&#x9801;&#x7684;&#x7DE8;&#x78BC;&#xFF0C;&#x50CF;&#x662F;<code>&lt;meta charset=&quot;utf-8&quot;&gt;</code></p>
+</blockquote>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>My First Chrome Extension<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;utf-8&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;app.js&quot;</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Hello Taiwan!<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Hello Taiwan!<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Hello Taiwan!<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<h3 id="%E7%B7%A8%E8%BC%AF-app-js">&#x7DE8;&#x8F2F; <code>app.js</code></h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> options = {
+    type:<span class="hljs-string">&quot;basic&quot;</span>,
+    title: <span class="hljs-string">&quot;&#x6211;&#x7684;&#x7B2C;&#x4E00;&#x500B; Chrome &#x901A;&#x77E5;&quot;</span>,
+    message: <span class="hljs-string">&quot;Hello Taiwan&quot;</span>,
+    iconUrl: <span class="hljs-string">&quot;icon.png&quot;</span>
+};
+
+chrome.notifications.create(options, callback);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callback</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;popup done&apos;</span>);
+}
+</code></pre>
+<h3 id="%E6%B8%AC%E8%A9%A6%E9%80%9A%E7%9F%A5">&#x6E2C;&#x8A66;&#x901A;&#x77E5;</h3>
+<p>&#x5728;&#x9EDE;&#x9078;&#x5957;&#x4EF6;&#x6309;&#x9215;&#x5F8C;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6211;&#x5011;&#x525B;&#x525B;&#x8A2D;&#x5B9A;&#x7684;&#x901A;&#x77E5;&#x8A0A;&#x606F;</p>
+<p><img src="images/rich-notification-basic-popup-demo.png" alt="&#x6E2C;&#x8A66;&#x901A;&#x77E5;"></p>
+<h2 id="%E5%9C%96%E7%89%87%E9%80%9A%E7%9F%A5-image">&#x5716;&#x7247;&#x901A;&#x77E5; (image)</h2>
+<h3 id="%E7%B7%A8%E8%BC%AF-app-js">&#x7DE8;&#x8F2F; <code>app.js</code></h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> options = {
+    type:<span class="hljs-string">&quot;image&quot;</span>,
+    title: <span class="hljs-string">&quot;&#x6211;&#x7684;&#x7B2C;&#x4E00;&#x500B; Chrome &#x901A;&#x77E5;&#x9846;&#x9846;&quot;</span>,
+    message: <span class="hljs-string">&quot;Hello Taiwan&quot;</span>,
+    iconUrl: <span class="hljs-string">&quot;icon.png&quot;</span>,
+    imageUrl: <span class="hljs-string">&quot;icon.png&quot;</span>
+};
+
+chrome.notifications.create(options, callback);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callback</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;popup done&apos;</span>);
+}
+</code></pre>
+<h3 id="%E6%B8%AC%E8%A9%A6%E9%80%9A%E7%9F%A5">&#x6E2C;&#x8A66;&#x901A;&#x77E5;</h3>
+<p>&#x5728;&#x9EDE;&#x9078;&#x5957;&#x4EF6;&#x6309;&#x9215;&#x5F8C;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6211;&#x5011;&#x525B;&#x525B;&#x8A2D;&#x5B9A;&#x7684;&#x5716;&#x7247;&#x901A;&#x77E5;&#x8A0A;&#x606F;</p>
+<p><img src="images/rich-notification-image-popup-demo.png" alt="&#x6E2C;&#x8A66;&#x901A;&#x77E5;"></p>
+<h2 id="%E6%B8%85%E5%96%AE%E9%80%9A%E7%9F%A5-list">&#x6E05;&#x55AE;&#x901A;&#x77E5; (list)</h2>
+<h3 id="%E7%B7%A8%E8%BC%AF-app-js">&#x7DE8;&#x8F2F; <code>app.js</code></h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> options = {
+    type:<span class="hljs-string">&quot;list&quot;</span>,
+    title: <span class="hljs-string">&quot;&#x6211;&#x7684;&#x7B2C;&#x4E00;&#x500B; Chrome &#x901A;&#x77E5;&quot;</span>,
+    message: <span class="hljs-string">&quot;Hello Taiwan&quot;</span>,
+    iconUrl: <span class="hljs-string">&quot;icon.png&quot;</span>,
+    items: [
+        { title: <span class="hljs-string">&quot;&#x9805;&#x76EE; 1&quot;</span>, message: <span class="hljs-string">&quot;Hello &#x9805;&#x76EE; 1&quot;</span>},
+        { title: <span class="hljs-string">&quot;&#x9805;&#x76EE; 2&quot;</span>, message: <span class="hljs-string">&quot;Hello &#x9805;&#x76EE; 2&quot;</span>},
+        { title: <span class="hljs-string">&quot;&#x9805;&#x76EE; 3&quot;</span>, message: <span class="hljs-string">&quot;Hello &#x9805;&#x76EE; 3&quot;</span>}
+    ]
+};
+
+chrome.notifications.create(options, callback);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callback</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;popup done&apos;</span>);
+}
+</code></pre>
+<h3 id="%E6%B8%AC%E8%A9%A6%E9%80%9A%E7%9F%A5">&#x6E2C;&#x8A66;&#x901A;&#x77E5;</h3>
+<p>&#x5728;&#x9EDE;&#x9078;&#x5957;&#x4EF6;&#x6309;&#x9215;&#x5F8C;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6211;&#x5011;&#x525B;&#x525B;&#x8A2D;&#x5B9A;&#x7684;&#x6E05;&#x55AE;&#x901A;&#x77E5;&#x8A0A;&#x606F;</p>
+<p><img src="images/rich-notification-list-popup-demo.png" alt="&#x6E2C;&#x8A66;&#x901A;&#x77E5;"></p>
+<h2 id="%E9%80%B2%E5%BA%A6%E9%80%9A%E7%9F%A5-progress">&#x9032;&#x5EA6;&#x901A;&#x77E5; (progress)</h2>
+<h3 id="%E7%B7%A8%E8%BC%AF-app-js">&#x7DE8;&#x8F2F; <code>app.js</code></h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> options = {
+    type:<span class="hljs-string">&quot;progress&quot;</span>,
+    title: <span class="hljs-string">&quot;&#x6211;&#x7684;&#x7B2C;&#x4E00;&#x500B; Chrome &#x901A;&#x77E5;&quot;</span>,
+    message: <span class="hljs-string">&quot;Hello Taiwan&quot;</span>,
+    iconUrl: <span class="hljs-string">&quot;icon.png&quot;</span>,
+    progress: <span class="hljs-number">42</span>
+};
+
+chrome.notifications.create(options, callback);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callback</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;popup done&apos;</span>);
+}
+</code></pre>
+<h3 id="%E6%B8%AC%E8%A9%A6%E9%80%9A%E7%9F%A5">&#x6E2C;&#x8A66;&#x901A;&#x77E5;</h3>
+<p>&#x5728;&#x9EDE;&#x9078;&#x5957;&#x4EF6;&#x6309;&#x9215;&#x5F8C;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6211;&#x5011;&#x525B;&#x525B;&#x8A2D;&#x5B9A;&#x7684;&#x9032;&#x5EA6;&#x901A;&#x77E5;&#x8A0A;&#x606F;</p>
+<p><img src="images/rich-notification-progress-popup-demo.png" alt="&#x6E2C;&#x8A66;&#x901A;&#x77E5;"></p>
+<h2 id="%E9%80%9A%E7%9F%A5%E9%96%8B%E5%95%9F%E8%A6%96%E7%AA%97">&#x901A;&#x77E5;&#x958B;&#x555F;&#x8996;&#x7A97;</h2>
+<h3 id="%E7%B7%A8%E8%BC%AF-app-js">&#x7DE8;&#x8F2F; <code>app.js</code></h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> options = {
+    type:<span class="hljs-string">&quot;basic&quot;</span>,
+    title: <span class="hljs-string">&quot;&#x6211;&#x7684;&#x7B2C;&#x4E00;&#x500B; Chrome &#x901A;&#x77E5;&quot;</span>,
+    message: <span class="hljs-string">&quot;Hello Taiwan&quot;</span>,
+    iconUrl: <span class="hljs-string">&quot;icon.png&quot;</span>
+};
+
+chrome.notifications.create(options, callback);
+
+chrome.notifications.onClicked.addListener(openNewTabHandler);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callback</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;popup done&apos;</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">openNewTabHandler</span><span class="hljs-params">()</span> </span>{
+    chrome.tabs.create({
+        url:<span class="hljs-string">&quot;https://www.google.com.tw/&quot;</span>
+    });
+}
+</code></pre>
+<p>&#x5728;&#x52A0;&#x5165; <code>chrome.notifications.onClicked.addListener(openNewTabHandler);</code> &#x50BE;&#x807D;&#x9EDE;&#x9078;&#x4E8B;&#x4EF6;&#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x5728;&#x9EDE;&#x9078;&#x901A;&#x77E5;&#x6703;&#x76F4;&#x63A5;&#x958B;&#x555F;&#x4E00;&#x500B;&#x65B0;&#x9801;&#x9762;&#x5C0E;&#x5411;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x7DB2;&#x5740;</p>
+<h2 id="%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h2>
+<ul>
+<li><a href="https://developer.chrome.com/apps/richNotifications" target="_blank">https://developer.chrome.com/apps/richNotifications</a></li>
+<li><a href="https://developer.chrome.com/apps/notifications#event-onClicked" target="_blank">chrome.notifications - Google Chrome</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../advanced/advanced-README.html" class="navigation navigation-prev " aria-label="Previous page: 進階"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../advanced/advanced-desktop-notifications.html" class="navigation navigation-next " aria-label="Next page: Desktop Notifications"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
