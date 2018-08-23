@@ -87,5 +87,8 @@
 }
 ```
 
+
+
 ## 參考資料
 * [Manifest File Format - Google Chrome](https://developer.chrome.com/extensions/manifest)
+* [大兜的 Chrome Extension 學習筆記 - 不歸錄](https://tonytonyjan.net/2012/05/25/get-start-with-chrome-extension/)
